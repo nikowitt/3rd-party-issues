@@ -1,10 +1,8 @@
-
-
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class IDEA_186376_LoggingIssueTest {
+public class IDEA_186376_LoggingIssueTest<String> {
 
 	private static Logger LOGGER = LoggerFactory.getLogger(IDEA_186376_LoggingIssueTest.class);
 

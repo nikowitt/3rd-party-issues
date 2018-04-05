@@ -15,16 +15,16 @@ public class IDEA_189535_Junit5SingleTestSelectionTest {
 
 	public static Stream<Arguments> test() {
 		return Stream.of(
-				of("a","b"),
-				of("b","c"),
-				of("c","d")
+				of("a"),
+				of("b"),
+				of("c")
 		);
 	}
 
 	@ParameterizedTest
 	@MethodSource
 	public void test(String arg, String arg1) throws Exception {
-		LOGGER.error("Single test selection breaks when the test signature changes without wiping all existing test configurations.");
+		LOGGER.error("See https://youtrack.jetbrains.com/issue/IDEA-189535#comment=27-2799619");
 	}
 	
 }
